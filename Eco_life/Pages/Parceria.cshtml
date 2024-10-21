@@ -1,0 +1,183 @@
+﻿@page
+@model ParceriaModel
+@{
+    ViewData["Title"] = "Parceria";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>.</title>
+    <link rel="stylesheet" href="/css/site.css" />
+    </head>
+
+<img src="~/img/work.png" alt="" class="work">
+ 
+
+
+
+<body>
+    <img class ="p1" src="~/img/p1.png" alt="">
+    <img class ="p2" src="~/img/p3.png" alt="">
+    <div class="container">
+        <h1>Parcerias</h1>
+
+        <div class="content">
+            <div class="left-section">
+                <p>Acesso colocar seus produtos a venda: Ao fazer parceria, você pode ter acesso preferencial ou exclusivo aos produtos biodegradáveis e ecológicos oferecidos pela EcoLife, que podem ser integrados à sua linha de produtos ou utilizados em suas operações.</p>
+                <p>Responsabilidade Social Corporativa: Associar-se com a EcoLife pode fortalecer sua estratégia de responsabilidade social corporativa (CSR), demonstrando seu compromisso com práticas comerciais éticas e sustentáveis.</p>
+                <p>Nossas parcerias frequentemente envolvem projetos sociais que beneficiam a comunidade local, permitindo que sua empresa participe ativamente de ações que geram valor social.</p>
+
+                <div class="contact">
+                    <p>XXXXXXX@email.com</p>
+                    <p>(71) 02316515451</p>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <h2>Nossas parceiras</h2>
+                <div class="partners">
+                    <div class="partner">
+                        <div class="partner-photo"></div>
+                        <p>Name</p>
+                    </div>
+                    <div class="partner">
+                        <div class="partner-photo"></div>
+                        <p>Name</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+      
+
+        h1 {
+            position:relative;
+            right:180px;
+            color: #4F7D47;
+            font-size:35px;
+            top:-160px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .left-section, .contact {
+            max-width: 800px; /* Ajusta a largura máxima para que os textos não se expandam demais */
+            margin: 0 auto; /* Centraliza os textos dentro do container */
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .left-section {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+            .left-section p {
+                position:relative;
+                color: #333333;
+                left:-65px;
+                font-size: 21px;
+                margin-bottom: 20px;
+                top:-100px;
+                text-align: justify;
+            }
+
+        .contact {
+            position:relative;
+            background-color: #A9CC99;
+            padding: 10px;
+            width:500px;
+            height:100px;
+            top:-40px;
+            left:-215px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+            .contact p {
+                position:relative;
+                left:10px;
+                top:-5px;
+                font-size: 20px;
+                color: black;
+            }
+
+        .right-section {
+            position:relative;
+            top:95px;
+            font-size:21px;
+            left:150px;
+            width: 300px;
+        }
+        .work{
+            position:relative;
+            width:300px;
+            height:200px;
+            z-index:1;
+            border-radius:10px;
+            top:80px;
+            left:1080px;
+        }
+        .p1 {
+            position:relative;
+            width:200px;
+            opacity:0.3;
+            left:590px;
+            height:160px;
+        }
+
+        .p2 {
+            position: relative;
+            width: 200px;
+            opacity:0.3;
+            transform:rotate(90deg);
+            left:690px;
+            height: 160px;
+
+        }
+
+        .image {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #4F7D47;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .partners {
+            position:relative;
+            display: flex;
+            left:10px;
+            justify-content: space-between;
+        }
+
+        .partner {
+            position:relative;
+            top:140px;
+            text-align: center;
+        }
+
+        .partner-photo {
+            width: 80px;
+            height: 80px;
+            background-color: #e5e5e5;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+    </style>
+</body>
+</html>

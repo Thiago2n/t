@@ -1,0 +1,90 @@
+﻿@page
+@model SobreModel
+@{
+    ViewData["Title"] = "Sobre nós";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre Nós</title>
+    <link rel="stylesheet" href="/css/site.css" />
+
+</head>
+<body>
+    <div class="caixaS">
+        <section class="about-us">
+            <h2>Sobre nós</h2>
+            <p>Criado em 2022, a EcoLife tem como seu principal objetivo conscientizar toda a população de Salvador/BA, para transformar nossa cidade mais sustentável no uso de plásticos na capital. Nosso site oferece vários produtos biodegradáveis e ecológicos, visando a substituição de plástico em diversas aplicações diárias. Além disso, apoiamos e incentivamos a participação em petições direcionadas ao governo, buscando impulsionar mudanças significativas nos hábitos das empresas e social, em prol de um futuro mais sustentável.</p>
+        </section>
+
+        <section class="our-goal">
+            <h2>Nosso objetivo</h2>
+            <div class="goal-content">
+                <p>O objetivo para criação de nosso site é promover mudanças significativas no uso de plástico no cotidiano dos cidadãos soteropolitanos por meio de um site que oferece uma abordagem integrada e prática. Nossa plataforma contará com uma loja voltada para a venda de produtos ecológicos, apresentando opções sustentáveis para o cotidiano. Ademais, o site indicará lugares adequados para o descarte correto de resíduos, promovendo a responsabilidade ambiental. Através de parcerias com empresas de reciclagem, pretendemos estabelecer uma conexão entre os cidadãos e as práticas de gerenciamento de resíduos, estimulando a reutilização e o descarte responsável.</p>
+                <div class="goal-image">
+                    <img src="image-placeholder.png" alt="Imagem ilustrativa">
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
+<style>
+ 
+
+  
+
+    h2 {
+        color: #4F7D47;
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .about-us, .our-goal {
+        max-width: 800px; /* Ajusta a largura máxima para que os textos não se expandam demais */
+        margin: 0 auto; /* Centraliza os textos dentro do container */
+    }
+    p {
+        color: #333333;
+        font-size: 16px;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    .about-us, .our-goal {
+        margin-bottom: 40px;
+    }
+
+    .goal-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+        .goal-content p {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+    .goal-image {
+        flex-shrink: 0;
+        width: 200px;
+        height: 200px;
+        background-color: #e5e5e5;
+        border-radius: 5px;
+    }
+
+        .goal-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+</style>
+

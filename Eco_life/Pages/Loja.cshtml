@@ -1,0 +1,105 @@
+﻿@page
+@model LojaModel
+@{
+    ViewData["Title"] = "Loja Ecológica";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>.</title>
+    <link rel="stylesheet" href="/css/Loja.css" />
+</head>
+<body>
+    <h1 class="Titulo">Loja Eco</h1>
+    <p></p>
+    <img class="LojE" img src="~/img/LojaEco.png" alt="exemplo" />
+    <p></p>
+    <section id="produtos">
+
+        <div class="container">
+        
+            <div class="produto">
+                <img class="pro1" img src="~/img/Produto1.png" alt="exemplo" />
+                <h5>Talheres de bambu.</h5>
+                
+                <p class="preco">R$ 15,99</p>
+                 <a href="~/Pagamento" class="btn-comprar">Comprar</a>
+            </div>
+            <div class="produto">
+                <img class="pro2" img src="~/img/Produto2.png" alt="exemplo" />
+                <h5>Copo ecológico com tampa</h5>
+                
+                <p class="preco">R$ 12,50</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img class="pro3" img src="~/img/Produto3.png" alt="exemplo" />
+                <h5>Kit ecológico de madeira</h5>
+                <p class="preco">R$28,30</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img class="pro4" img src="~/img/Produto4.png" alt="exemplo" />
+                <h5>Canudo de Papel</h5>
+                <p class="preco">R$5,90</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img class="pro5" img src="~/img/Produto5.png" alt="exemplo" />
+                <h5>Bucha vegetal</h5>
+                <p class="preco">R$5,20</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img class="pro6" img src="~/img/Produto6.png" alt="exemplo" />
+                <h5>Vaso de planta Eco</h5>
+                <p class="preco">R$5,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img class="pro7" img src="~/img/Produto7.png" alt="exemplo" />
+                <h5>Canudo de plástico biodegradável</h5>
+                <p class="preco">R$10,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img class="pro8" img src="~/img/Produto8.png" alt="exemplo" />
+                <h5>Sabão Natural</h5>
+                <p class="preco">R$7,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img class="pro9" img src="~/img/Produto9.png" alt="exemplo"/>
+                <h5>EcoBags </h5>
+                <p class="preco">R$39,00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+  
+</body>
+</html>
+
+  <style>
+    /* Estilizar o link <a> como um botão */
+    .btn-comprar {
+        background-color: #4aa863;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-comprar:hover {
+            background-color: #24783a;
+            text-decoration:none;
+        }
+
+</style>

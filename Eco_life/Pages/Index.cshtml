@@ -1,0 +1,188 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <img class="hom" img src="~/img/Home.png" alt="exemplo" />
+</div>
+
+
+<h1>Seja um Voluntário</h1>
+
+<section class="voluntario">
+    <h2>Faça parte da causa</h2>
+ 
+
+    <div class="voluntario-canais">
+        <div class="canal">
+            <div class="canal-content"></div>
+            <p>Nome do canal de voluntário</p>
+        </div>
+        <div class="canal">
+            <div class="canal-content"></div>
+            <p>Nome do canal de voluntário</p>
+        </div>
+        <div class="canal">
+            <div class="canal-content"></div>
+            <p>Nome do canal de voluntário</p>
+        </div>
+        <div class="canal1">
+            <div class="canal-content"></div>
+            <p>Nome do canal de voluntário</p>
+        </div>
+        <div class="canal2">
+            <div class="canal-content"></div>
+            <p>Nome do canal de voluntário</p>
+        </div>
+        <div class="canal2">
+            <div class="canal-content"></div>
+            <p>Nome do canal de voluntário</p>
+        </div>
+    </div>
+</section>
+
+<section class="descarte">
+    <h2>Locais para descarte correto</h2>
+
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d175964.03616758523!2d-38.490917581407295!3d-12.953119257635704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdescartes%20de%20res%C3%ADduos%20biodegradaveis!5e0!3m2!1spt-BR!2sbr!4v1727288151207!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>>
+    </div>
+    <div class="planta">
+        <img class="folha" img src="~/img/folha.png" alt="Tipos de descarte" />
+        <img class="folha2" img src="~/img/folha.png" alt="Tipos de descarte" />
+
+    </div>
+
+    <div class="tipos-descarte">
+         <img class="lixo" img src="~/img/tipolixo.png" alt="Tipos de descarte"/>
+         <h3>Tipos de Descarte</h3>
+    </div>
+</section>
+
+
+<style>
+
+   .hom {
+       height:600px;
+       width:1150px;
+   } 
+   h2 {
+    color: #5C755E;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+p {
+    color: #A9B49A;
+    font-size: 18px;
+}
+
+.voluntario {
+    padding: 40px;
+    text-align: center;
+}
+
+.voluntario-canais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.canal {
+    position:relative;
+    background-color: #E1F4DF;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    left:100px;
+
+}
+.canal1 {
+    position:relative;
+    background-color: #E1F4DF;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    top:195px;
+    right:170px;
+
+}
+.canal2 {
+    position:relative;
+    background-color: #E1F4DF;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    right:170px;
+}
+
+.canal-content {
+    background-color: #DFF4DC;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size:40px;
+}
+
+.descarte {
+    background-color: #E1F4DF;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mapa {
+    margin: 20px 0;
+}
+.folha {
+    position:relative;
+    height:180px;
+    width:170px;
+    top:-550px;
+    left:435px;
+    }
+.folha2 {
+        position: relative;
+        height: 180px;
+        width: 170px;
+        right:440px;
+        top:-115px;
+        transform: rotate(180deg);
+    } 
+
+.tipos-descarte {
+    position:relative;
+    margin-top: 20px;
+    font-size:25px;
+    font-family:Kodchasan;
+    color:#4e6137;
+    top:-50px;
+}
+
+.tipos-descarte img {
+    position:relative;
+    top:-40px;
+    width: 100%;
+    max-width: 600px;
+
+
+
+}
+
+ (max-width: 768px) {
+    .voluntario-canais {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tipos-descarte img {
+        width: 100%;
+    }
+
+}
+    
+</style>
